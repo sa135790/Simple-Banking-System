@@ -1,0 +1,11 @@
+{
+  "name": "4.-simple-banking-system",
+  "version": "1.0.0",
+  "description": "html css javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "Hello "
+  },
+  "author": "Asadujjaman Noor",
+  "license": "ISC"
+}
