@@ -44,3 +44,40 @@ var depositBtn = document.getElementById('addDeposit');
 })
 
 // End managing condition
+
+
+// Withdraw Part Start......
+
+
+var clickWithdraw = document.getElementById('clickWithdraw');
+clickWithdraw.addEventListener('click',function(){
+    
+    var withdrawmount = document.getElementById('withdrawAmount').value;
+    var withdrawAmountNumber = parseFloat(withdrawmount);
+    
+
+
+     var currentWithdraw = document.getElementById('currentWithdraw').innerText;
+     var currentWithdrawNumber = parseFloat(currentWithdraw);
+     
+     var totalWithdrawAmount = withdrawAmountNumber + currentWithdrawNumber;
+     document.getElementById('currentWithdraw').innerText=totalWithdrawAmount;
+
+    
+
+     var currentAmount = document.getElementById('currentAmount').innerText;
+     var currentAmountNumber = parseFloat(currentAmount);
+
+     var CurrentTotalBalance = currentAmountNumber - withdrawAmountNumber;
+     document.getElementById('currentAmount').innerText=CurrentTotalBalance;
+
+    
+
+    
+   
+
+   
+})
+
+
+// Withdraw Part End.......
