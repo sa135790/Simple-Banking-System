@@ -1,0 +1,24 @@
+
+
+body{
+    font-family: "Playwrite DE Grund", serif;
+    font-optical-sizing: auto;
+}
+
+.form-group{
+    padding: 20px;
+}
+
+.form_controler{
+    padding: 20px;
+    box-shadow: 5px 7px 5px whitesmoke;
+    background-color: bisque;
+}
+
+.manage_input{
+    box-shadow: 5px 8px 7px tomato;
+}
+
+#transArea{
+    display: none;
+}

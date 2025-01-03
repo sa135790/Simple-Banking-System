@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Banking System</title>
+</head>
+<body>
+
+    <div class="continer card">
+        
+        <div id="form_area">
+            <h2 class="text-center mt-4 ">Welcome to Trimidial Bank</h2>
+            <!-- Log in Form Start From Here -->
+           <div class="form_controler card mx-5 mt-4">
+            <form>
+                <div class="form-group ">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" required>
+                  </div>
+                  <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+                </div>
+              
+                <button id="entBtn" type="button" class="btn btn-success mx-3">Enter</button>
+              </form>
+            </div>
+
+            <!-- Log in From End Here- -------->
+        </div>
+
+    </div>
+    
+    <!-- Manage Transaction Area -->
+
+ <div class="container">
+    <div id="transArea">
+        <h2 class="text-center mt-3">Manage Transaction Area....</h2>
+
+        <div class="row mt-3">
+
+            <div class="col-sm">
+                <div class="card bg-success">
+                    <div class="card-body text-light">
+                      <h3 class="card-title ">Deposit</h3>
+                      <h5 class="card-subtitle mb-2">$ <span id="currentDeposit">00</span></h5>
+                    </div>
+                  </div>
+            </div>
+
+
+            <div class="col-sm">
+                <div class="card bg-warning">
+                    <div class="card-body text-light">
+                      <h3 class="card-title">Withdraw</h3>
+                      <h5 class="card-subtitle mb-2">$ <span>00</span></h5>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-sm">
+                <div class="card bg-primary">
+                    <div class="card-body  text-light">
+                      <h3 class="card-title">Balance</h3>
+                      <h5 class="card-subtitle mb-2">$<span id="currentAmount">12500</span></h5>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+
+       <!-- Input Area   [Collection Of Buttons]........... -->
+       <div class="manage_input">
+       <div class="row">
+        <div class="col-sm-6">
+          <div class="card mt-4 ">
+            <div class="card-body">
+              <h5 class="card-title">Deposit</h5>
+              <input id="addAmount" type="text" class="form-control" placeholder="$ enter deposit amount">
+              <button id="addDeposit" type="button" class="btn btn-success mt-3">Deposit</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card mt-4 ">
+            <div class="card-body">
+              <h5 class="card-title">Withdraw</h5>
+              <input type="text" class="form-control" placeholder="$ enter Withdraw amount">
+              <button type="button" class="btn btn-success mt-3">Withdraw</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+       <!-- Input Area end....... -->
+
+
+
+
+
+
+
+
+
+
+    </div>
+</div>
+    
+
+
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
